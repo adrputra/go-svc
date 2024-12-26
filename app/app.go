@@ -63,7 +63,6 @@ func Start() {
 	e.Use(middleware.Logger())
 	router.InitPublicRoute("", public)
 	router.InitUserRoute("/user", api)
-	router.InitDatasetRoute("/dataset", api)
 	router.InitRoleRoute("/role", api)
 	router.InitParamRoute("/param", api)
 
